@@ -35,7 +35,8 @@ const s3Client = new S3Client({
 })
 
 const BUCKET_NAME = process.env.CLOUDFLARE_BUCKET_NAME || ''
-const CDN_URL = process.env.CLOUDFLARE_CDN_URL || ''
+const PUBLIC_CDN_URL = process.env.NEXT_PUBLIC_CLOUDFLARE_CDN_URL || ''
+
 
 export async function POST(request: NextRequest) {
   try {
@@ -87,9 +88,9 @@ export async function POST(request: NextRequest) {
     await Promise.all(uploadPromises)
     
     // Construir las URLs para cada tamaño
-    const smallUrl = `${CDN_URL}/small/${webpFilename}`
-    const mediumUrl = `${CDN_URL}/medium/${webpFilename}`
-    const originalUrl = `${CDN_URL}/original/${webpFilename}`
+    const smallUrl = `${PUBLIC_CDN_URL}/small/${webpFilename}`
+    const mediumUrl = `${PUBLIC_CDN_URL}/medium/${webpFilename}`
+    const originalUrl = `${PUBLIC_CDN_URL}/original/${webpFilename}`
     
     return NextResponse.json({
       filename: webpFilename,
