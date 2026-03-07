@@ -7,7 +7,11 @@ const ALLOWED_ORIGINS = [
   'http://localhost:3000',
   'http://localhost:3001',
   'https://masterbet.com',
-  'https://www.masterbet.com',
+  'https://masterbet.club',
+  'https://www.masterbet.club',
+  'https://www.panel.masterbet.club',
+  'https://www.admin.masterbet.club',
+  
 ]
 
 function getCorsHeaders(request: NextRequest) {
