@@ -11,6 +11,7 @@ const ALLOWED_ORIGINS = [
   'https://www.masterbet.club',
   'https://www.panel.masterbet.club',
   'https://www.admin.masterbet.club',
+  'https://7e4f-2800-2222-4000-73c-a474-b54e-fc3-b63a.ngrok-free.app'
   
 ]
 
