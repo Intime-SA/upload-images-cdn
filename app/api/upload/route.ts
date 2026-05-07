@@ -11,8 +11,10 @@ const ALLOWED_ORIGINS = [
   'https://www.masterbet.club',
   'https://www.panel.masterbet.club',
   'https://www.admin.masterbet.club',
-  'https://7e4f-2800-2222-4000-73c-a474-b54e-fc3-b63a.ngrok-free.app'
-  
+  'https://7e4f-2800-2222-4000-73c-a474-b54e-fc3-b63a.ngrok-free.app',
+  'https://stg-app.crossup.ai',
+  'https://unoverruled-unredeemable-marilou.ngrok-free.dev',
+  'https://admin-git-combos-ai-cross-up.vercel.app'
 ]
 
 function getCorsHeaders(request: NextRequest) {
