@@ -15,7 +15,8 @@ const ALLOWED_ORIGINS = [
   'https://stg-app.crossup.ai',
   'https://unoverruled-unredeemable-marilou.ngrok-free.dev',
   'https://admin-git-combos-ai-cross-up.vercel.app',
-  'https://app.crossup.ai'
+  'https://app.crossup.ai',
+  'https://admin-git-combos-pdp-cross-up.vercel.app'
   
 ]
 
